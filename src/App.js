@@ -14,6 +14,7 @@ import DashboardProfile from './components/pages/Dashboard/DashboardProfile';
 import DashboardSettings from './components/pages/Dashboard/DashboardSettings';
 import SideMenu from './components/common/SideMenu';
 import DashboardHeader from './components/pages/Dashboard/DashboardHeader';
+import Payment from './components/pages/Dashboard/Payment';
 
 const App = () => {
   const dashboardRoutes = [
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/dashboard/*" element={<DashboardHome />} />
           <Route path="/dashboard/profile" element={<DashboardProfile />} />
           <Route path="/dashboard/settings" element={<DashboardSettings />} />
+          <Route path="/pay-now" element={<Payment />} />
         </Routes>
         <Footer />
       </div>
