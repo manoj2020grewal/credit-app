@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logoImage from '../../assests/images/InstaPayCash.svg';
 
 const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="bg-gray-800 py-4">
+    <header className="bg-black py-4">
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between">
-          <div>
-            <Link to="/" className="text-white text-xl font-bold">Your Logo</Link>
+        <div className="flex items-center space-x-2">
+          <img src={logoImage} alt="Logo" className="h-16 w-16" />
           </div>
           <div>
             <ul className="flex space-x-4">
